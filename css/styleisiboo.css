@@ -1,0 +1,134 @@
+@charset "utf-8";
+body{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	width: auto;
+	
+}
+
+header{
+	position: sticky;
+	top: 0;
+}
+nav{
+	background-color:#27A9E1;
+	overflow: auto;
+	padding:0 30px;
+}
+
+h1{
+	float: left;
+	color:white;
+}
+
+
+nav li{
+	list-style-type: none;
+	float: right
+	
+	
+	
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+	background-color: blue;
+	padding: 5px;
+	border-radius: 10%;
+	border:2px solid white; 
+}
+main{
+height: 850px;
+width: auto;
+	
+	
+}
+.sidebar{
+	background-color: #939597;
+	float: left;
+	height: 100%;
+	width: 20%;	
+	border: 1px solid #939597;
+}
+.sidebar ul{
+	margin:0;
+	border:2px solid  white ; 
+	
+	
+}
+.sidebar h1{
+	
+	border:2px solid white; 
+	padding: 10px;
+	margin: 25px 0;
+	background-color: black;
+	
+}
+.sidebar ul:hover{
+	background-color: red;
+	border:2px solid white; 
+}
+
+.color_sidebar{
+	background-color:#404041;
+	border:2px solid white; 
+	
+}
+
+.sidebar li{
+	list-style-type: none;
+	margin: 10px;
+	padding: 20px;
+	
+	
+		
+}
+.sidebar a{
+	text-decoration: none;
+	color: white;
+	
+	
+}
+
+.content{
+	background-color: #FFFFFF;
+	float: right;
+	height: 100%;
+	width: 80%;	
+	text-align: center;
+		
+}
+.content li{
+	list-style-type: none;
+	float: left;
+	
+	
+	
+}
+
+.kotak{
+	text-decoration: none;
+	color: white;
+	background-color: red;
+	padding: 5px;
+	border-radius: 10%;
+	border:2px solid white; 
+}
+
+table{
+	margin-top: 50px;
+	margin-left: 20px;
+	border: 1px solid grey;
+	border-spacing:0;
+}
+
+table th{
+	padding:4px 6px;
+	color: white;
+	background-color: black;
+	font-weight:100; 
+
+	
+}

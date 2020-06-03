@@ -1,0 +1,148 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #4BF1D8;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+nav .box {
+	width: 800px;
+	height: 500px;
+	margin: auto;
+	margin-top: 10px;
+	box-shadow: 7px 7px 10px 15px white;
+	background-color: #4BF1D8;
+	border-radius: 12%;
+}
+
+nav .box .images {
+	background: url(../picture/hotel.jpeg);
+	background-size: cover;
+	float: left;
+	width: 50%;
+	height: 500px;
+	border-top-left-radius: 25%;
+	border-bottom-left-radius: 25%;
+	border-top-right-radius: 5%;
+	border-bottom-right-radius: 5%;
+	box-shadow: -13px 0 15px 15px white;
+}
+/*nav .box .images:hover{
+	border-radius: 5px;
+}*/
+
+.main {
+	float: right;
+	width: 50%;
+}
+h1 {
+	font-family: 'Pacifico', cursive;
+	padding: 10px;
+	font-size: 35px;
+	text-align: center;
+	color: black;
+	margin-top: 35px;
+}
+h1:hover{
+	color: black;
+}
+
+.main h3 img{
+	height: 100px;
+	padding-left: 30%;
+	padding-top: 8px;
+}
+.main h2{
+	padding-left: 22%;
+}
+.main label {
+	padding-top: 25px;
+	display: block;
+	margin: 10px;
+	font-size: 14px;
+	font-family: 'Ubuntu', cursive;
+}
+.main input {
+	margin-left: 27px;
+	padding-left: 10px;
+	outline: none;
+	border: 1px solid #17CD4F;
+	width: 300px;
+	height: 30px;
+	border-radius: 12px;
+}
+.main button{
+	margin: 20px 80px 0;
+	height: 40px;
+	width: 200px;
+	text-transform: uppercase;
+	box-shadow: 4px 0 5px 6px white;
+	border-radius: 12px;
+	border: none;
+	background: #17CD4F;
+	color: white;
+	font-size: 20px;
+}
+.main button:hover{
+	cursor: pointer;
+	background: black;
+}
+
+
+.footer-img {
+	display: none;
+}
+
+/*for gadget*/
+@media(max-width: 800px){
+	.box{
+		width: 50%;
+		/*box-shadow: 0;*/
+	}
+	h1{
+		margin-left: 20%;
+	}
+	.box .images{
+		display: none;
+	}
+
+	.main{
+		float: unset;
+		width: 100%;
+	}
+
+	.main label{
+		margin: 20px 45px;
+	}
+
+	.main input{
+		width: 80%;
+		margin: 0 30px;
+		align-content: center;
+	}
+
+	.main button{
+		width: 80%;
+		margin: 32px 30px;
+	}
+
+	.footer-img{
+		width: 100%;
+		display: block;
+	}
+
+	.footer-img img{
+		width: 100%;
+		height: 10%;
+	}
+}
+
+@media(max-width: 553px){
+	.box{
+		width: 100%;
+	}
+}
