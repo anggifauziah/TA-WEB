@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -45,7 +45,7 @@
 					<input type="text" id="lname" name="nama" placeholder="Nama Lengkap" required>
 
 					<label for="subject">Alamat-Lengkap</label>
-					<textarea id="subject" name="alamat" placeholder="Alamat Lengkap" required></textarea>
+					<input type="text" id="subject" name="alamat" placeholder="Alamat Lengkap" required>
 
 					<label for="fname">No Handphone</label>
 					<input type="text" id="fname" name="nohp" placeholder="No Handphone" required>

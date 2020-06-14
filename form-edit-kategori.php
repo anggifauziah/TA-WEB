@@ -23,11 +23,11 @@ $row = mysqli_fetch_array($kamar);
 		</header>
 		<main>
 			<div class="sidebar">
-				<ul>
+				<ul class="color_sidebar">
 					<h1></h1>
 					<li><a href="kategori.php">Data Kategori</a></li>
 				</ul>
-				<ul class="color_sidebar">
+				<ul>
 					<h1></h1>
 					<li><a href="index.php">Data kamar</a></li>
 				</ul>
@@ -39,7 +39,7 @@ $row = mysqli_fetch_array($kamar);
 			<div class="content">
 				<form action="proses-edit-kamar.php" method="POST">
 					<div class="formatas">
-						<p>Data Kamar</p>
+						<p>Data Kategori</p>
 					</div>
 					<input type="hidden" readonly value="<?php echo $row['id_kategori']; ?>" name="id">
 					<label for="country">Tipe kamar</label>

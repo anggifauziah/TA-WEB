@@ -10,7 +10,6 @@ document.location='login.php';
 <html>
 	<head>
 		<title>project dpw</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/styledbkam.css">
 	</head>
 	<body>
@@ -39,7 +38,7 @@ document.location='login.php';
 			</div>
 			<div class="content">
 				<ul>
-					<li><a href="form-booking.php">Tambah</a></li>
+					<li><a class="kotak" href="form-booking.php">Tambah</a></li>
 				</ul>
 				<table border="1" width="95%">
 					<tr>
@@ -70,7 +69,7 @@ document.location='login.php';
 							echo "<td>".$data['cekin']."</td>";
 							echo "<td>".$data['cekout']."</td>";
 							echo "<td>".$data['total_bayar']."</td>";
-							echo "<td><button class=btn-edit onclick='upStatus()'>".$data['status_booking']."</button></td>";
+							echo "<td><a href='form-edit-booking.php?id=".$data['id_booking']."' class='btn-edit'>".$data['status_booking']."</a></td>";
 						echo "</tr>";
 						}
 						?>
@@ -78,18 +77,5 @@ document.location='login.php';
 				</table>
 			</div>
 		</main>
-		<!-- belum -->
-		<script type="text/javascript">
-			function upStatus() { //membuat fungsi upStatus, mendapat dari onclick='upStatus()
-				var status; // membuat variabel status
-				var pesan = confirm("Apakah Anda Yakin Merubah Status Ini?"); // membuat variabel pesan dengan alert konfirmasi
-				if (pesan == true) { // pengecekan ketika isi pesan = true
-					status = "Anda Merubah Status!"; // maka status Berubah
-				} else { // Selain Itu
-					status = "Perintah Dibatalkan!"; // status Berubah
-				}
-				alert(status); // menampilkan alert status
-			}
-		</script>
 	</body>
 </html>

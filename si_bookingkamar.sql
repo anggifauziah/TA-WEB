@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2020 at 09:41 AM
+-- Generation Time: Jun 14, 2020 at 01:46 PM
 -- Server version: 10.1.39-MariaDB
 -- PHP Version: 7.1.29
 
@@ -45,13 +45,7 @@ CREATE TABLE `booking` (
 --
 
 INSERT INTO `booking` (`id_booking`, `id_kamar`, `nama_pemesan`, `alamat`, `no_hp`, `cekin`, `cekout`, `total_bayar`, `status_booking`) VALUES
-(1, 1, 'Anggi', 'Sidoarjo', '085748017952', '0000-00-00', '0000-00-00', 920000, 'Booking'),
-(2, 1, 'Ang', 'yaa', '08171289201', '0000-00-00', '0000-00-00', 690000, 'Booking'),
-(3, 1, 'a', 'haa', '018239747', '0000-00-00', '0000-00-00', 920000, 'Booking'),
-(4, 1, 'aaaa', 'nnnnn', '08274374328964', '0000-00-00', '0000-00-00', 1380000, 'Booking'),
-(5, 1, 'isok', 'paling', '02194712947', '2020-05-24', '2020-05-29', 1380000, 'Booking'),
-(6, 1, 'nyobak', 'sek', '0238405493275', '2020-05-24', '2020-05-28', 1150000, 'Booking'),
-(7, 1, 'cobak', 'satu lagi', '0112728147', '2020-05-25', '2020-05-30', 1380000, 'Booking');
+(1, 6, 'Anggi', 'Sidoarjo', '085791048101', '2020-06-13', '2020-06-14', 3000000, 'Selesai');
 
 -- --------------------------------------------------------
 
@@ -72,7 +66,13 @@ CREATE TABLE `kamar` (
 
 INSERT INTO `kamar` (`id_kamar`, `id_kategori`, `no_kamar`, `status_kamar`) VALUES
 (1, 1, 101, 'Kosong'),
-(2, 1, 102, 'Terisi');
+(2, 1, 102, 'Kosong'),
+(3, 1, 103, 'Kosong'),
+(4, 1, 104, 'Kosong'),
+(5, 1, 105, 'Kosong'),
+(6, 2, 201, 'Kosong'),
+(7, 2, 202, 'Kosong'),
+(8, 2, 203, 'Kosong');
 
 -- --------------------------------------------------------
 
@@ -151,13 +151,13 @@ ALTER TABLE `user_login`
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `id_booking` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_booking` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `kamar`
 --
 ALTER TABLE `kamar`
-  MODIFY `id_kamar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_kamar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `kategori_kamar`
